@@ -72,6 +72,9 @@ ifneq ($(shell find /etc/apt/ -name "sources.list.old" -type f),)
 	sudo cat /etc/apt/sources.list.old > etc/apt/sources.list
 endif
 
+time-fix:
+	timedatectl set-local-rtc 1 --adjust-system-clock
+
 swapDelete:
 	sudo swapoff /swapfile
 	swapon -s
