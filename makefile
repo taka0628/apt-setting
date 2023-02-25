@@ -73,7 +73,8 @@ ifneq ($(shell find /etc/apt/ -name "sources.list.old" -type f),)
 endif
 
 time-fix:
-	timedatectl set-local-rtc 1 --adjust-system-clock
+	hwclock: use --verbose, --debug has been deprecated.
+
 
 swapDelete:
 	sudo swapoff /swapfile
