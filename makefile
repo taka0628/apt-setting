@@ -41,6 +41,11 @@ bash-it:
 	cd ~/.bash_it && echo "y" | ./install.sh
 	sed -i "s/export BASH_IT_THEME='bobby'/export BASH_IT_THEME='easy'/" ~/.bashrc
 
+google-drive:
+	sudo add-apt-repository ppa:alessandro-strada/ppa
+	sudo apt update
+	sudo apt install -y google-drive-ocamlfuse
+
 docker:
 ifeq ($(shell docker --version 2>/dev/null),)
 	sudo apt update
