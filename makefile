@@ -60,6 +60,10 @@ endif
 	sudo systemctl restart docker
 	@echo "環境構築を完了するために再起動してください"
 
+git-setting:
+	git config --global user.name "taka0628"
+	git config --global user.email "takatsun15@gmail.com"
+
 
 # =================
 # network setting
