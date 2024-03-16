@@ -62,7 +62,8 @@ endif
 
 git-setting:
 	git config --global user.name "taka0628"
-	git config --global user.email "takatsun15@gmail.com"
+	git config --global user.email "taka2interface@gmail.com"
+	git config --global core.editor 'code --wait'
 
 
 # =================
