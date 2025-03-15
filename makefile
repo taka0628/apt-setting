@@ -92,5 +92,8 @@ swapDelete:
 	sudo sed -i "s@/swapfile@# /swapfile@" /etc/fstab
 	sudo rm -f /swapfile
 
+ssh-background-color:
+	bash set-ssh-background.sh
+
 test:
 	cd ~/.bash_it && pwd
